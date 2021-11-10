@@ -579,7 +579,8 @@ header {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
-.content-icon-close {
+
+.content-icon {
   width: 18px;
   height: 18px;
 }
@@ -605,14 +606,39 @@ header {
   letter-spacing: 0.01em;
   margin-bottom: 4px;
 }
+.input-cover {
+  position: relative;
+}
 .form-order-input {
   width: 100%;
   display: block;
   height: 40px;
+  padding-left: 42px;
   margin-bottom: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
+.form-order-input:focus-visible,
+.form-order-textarea:focus-visible {
+  outline: none;
+  border: 1px solid var(--icon-color-active);
+  border-radius: 4px;
+}
+.form-order-input:focus-visible + .content-input-icon,
+.content-modal-btn:hover {
+  fill: var(--icon-color-active);
+}
+.content-input-icon {
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  fill: var(--second-color-different-black);
+}
+
 .form-order-textarea {
   width: 448px;
   height: 120px;
@@ -630,6 +656,8 @@ header {
   letter-spacing: 0.01em;
 
   color: rgba(117, 117, 117, 0.5);
+}
+.form-order-textarea:focus-visible {
 }
 .form-order-label-chbx {
   position: relative;

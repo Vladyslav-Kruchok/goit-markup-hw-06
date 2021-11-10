@@ -476,31 +476,60 @@
     <div class="content-backdrop is-hidden" data-modal>
       <div class="content-modal">
         <button class="content-modal-btn" type="button" data-modal-close>
-          <svg class="content-icon-close">
+          <svg class="content-icon">
             <use href="./images/symbol-defs.svg#icon-close-black-18dp"></use>
           </svg>
         </button>
         <form class="form-order" autocomplete="on">
           <!-- form name -->
           <p class="form-order-title">Оставьте свои данные, мы вам перезвоним</p>
+
           <!-- name -->
-          <label class="form-order-label" for="name">Имя</label>
-          <input id="name" class="form-order-input" type="text" name="form-order-name" />
+          <label class="form-order-label">
+            <span>Имя</span>
+            <div class="input-cover">
+              <input class="form-order-input" type="text" name="form-order-name" />
+              <svg class="content-input-icon">
+                <use href="./images/symbol-defs.svg#icon-person"></use>
+              </svg>
+            </div>
+          </label>
+
           <!-- telephone -->
-          <label class="form-order-label" for="tel">Телефон</label>
-          <input id="tel" class="form-order-input" type="tel" name="form-order-tel" />
+          <label class="form-order-label">
+            <span>Телефон</span>
+            <div class="input-cover">
+              <input class="form-order-input" type="tel" name="form-order-tel" />
+              <svg class="content-input-icon">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </label>
+
           <!-- email -->
-          <label class="form-order-label" for="email">Почта</label>
-          <input id="email" class="form-order-input" type="email" name="form-order-email" />
+          <label class="form-order-label">
+            <span>Почта</span>
+            <div class="input-cover">
+              <input class="form-order-input" type="email" name="form-order-email" />
+              <svg class="content-input-icon">
+                <use href="./images/symbol-defs.svg#icon-email"></use>
+              </svg>
+            </div>
+          </label>
+
           <!-- comment -->
-          <label class="form-order-label" for="comment">Комментарий</label>
-          <textarea id="comment" class="form-order-textarea" placeholder="Введите текст"></textarea>
+          <label class="form-order-label">
+            <textarea class="form-order-textarea" placeholder="Введите текст"></textarea>
+            <span>Комментарий</span>
+          </label>
+
           <!-- agree -->
           <label class="form-order-label-chbx">
             <input class="check-box-input visually-hidden" type="checkbox" />
             <span class="check-box-icon"></span>
             <span>Соглашаюсь с рассылкой и принимаю <a class="agreement-link" href="">Условия договора</a></span>
           </label>
+
           <!-- submit-button -->
           <button class="form-order-btn" type="submit">Отправить</button>
         </form>
